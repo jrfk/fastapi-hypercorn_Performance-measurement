@@ -34,12 +34,12 @@ pip install -r requirements.txt
 
 HTTP2での動作させる場合  
 ```
-hypercorn --config=h2_config.py httptest.asgi:asyncio_app
+hypercorn --config=h2_config.py main-fastapi:app
 ```
 
 HTTP/1.1で動作させる場合
 ```
-hypercorn --config=h11_config.py httptest.asgi:asyncio_app
+hypercorn --config=h11_config.py main-fastapi:app
 ```
 
 # ストリーム
