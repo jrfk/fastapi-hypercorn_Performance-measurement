@@ -1,0 +1,14 @@
+<body>
+  <button id="requestMarkets">Request Markets</button>
+</body>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function(){
+    requestButton.onclick = async function() {
+      result = [];
+      for (let i = 0; i < 24; i++) {
+        result.push(fetch(`/message/${i}/`));
+      }
+      await Promise.all(result);
+    }
+  }, false);
+</script>
