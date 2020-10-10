@@ -29,7 +29,7 @@ mkcert example.com  localhost 127.0.0.1 ::1
 # Usage 
 
 ```
-pip install hypercorn fastapi
+pip install -r requirements.txt
 ```
 
 HTTP2での動作させる場合  
